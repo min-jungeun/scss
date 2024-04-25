@@ -22,7 +22,7 @@ a{
 
 // 공통클래스
 .container{
-    /*max-width는 반응형을 위한 것으로 max인 너비가 1280px인 것. 화면이 늘어날 경우에는 그냥 1280으로 유지, 화면이 작아질 때면 auto로 줄어든다.*/
+    // max-width는 반응형을 위한 것으로 max인 너비가 1280px인 것. 화면이 늘어날 경우에는 그냥 1280으로 유지, 화면이 작아질 때면 auto로 줄어든다.
     max-width:1280px;
     margin: 0 auto;
 }
@@ -45,7 +45,7 @@ a{
 
 // 커스터마이징(내 작업 시작)
 #hd{
-    .container{
+    .hd_container{
         h1{
             a{
 
@@ -66,5 +66,19 @@ a{
         a{
             color: red;
         }
+    }
+}
+#noticeSwiper{
+    .notice{
+        li{
+            background-color: red;
+            &:nth-child(2){ //  &:nth-child(2) li중에서 2번째 li만 선택한 것
+                background-color: yellow;
+            }
+        }
+    }
+    > div{  // > 자손선택자 , 띄어쓰기는 후손선택자
+        width: 50%;
+
     }
 }
