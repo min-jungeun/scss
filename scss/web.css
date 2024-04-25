@@ -1,9 +1,50 @@
-body {
-  font-family: "Courier New", Courier, monospace;
+@charset "UTF-8";
+@font-face {
+  font-family: "April16th-Promise";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/April16th-Promise.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
 }
-body a {
-  color: red;
+* {
+  font-family: "April16th-Promise";
+  color: #1f1f1f;
+  line-height: 2;
+  letter-spacing: -0.085em;
+  margin: 0;
+  padding: 0;
 }
-body a:hover {
+
+a {
   color: black;
+  text-decoration: none;
+}
+
+.container {
+  /*max-width는 반응형을 위한 것으로 max인 너비가 1280px인 것. 화면이 늘어날 경우에는 그냥 1280으로 유지, 화면이 작아질 때면 auto로 줄어든다.*/
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+#gnb li a {
+  color: red;
 }
