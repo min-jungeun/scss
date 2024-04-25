@@ -1,0 +1,9 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+body a {
+  color: red;
+}
+body a:hover {
+  color: black;
+}
